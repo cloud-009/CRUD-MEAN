@@ -1,27 +1,31 @@
 # MeanCrud
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.
+This is a simple CRUD operation app where we can add the books to database, update the added books, delete the book from the book-list, and get all the books added in the database also get the book by id of the book.
 
-## Development server
+>Front-End :-  Angular
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+>Back-End :- NodeJS, ExpressJS
 
-## Code scaffolding
+>Database :- MongoDb
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+>Connection :- Mongoose (for connecting express and mongodb)
 
-## Build
+## Installing node_modules 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Clone the repository and run `npm install` inside the folder **MeanCrud** to install the node_modules for the front-end part.
 
-## Running unit tests
+Go inside the **Node-Api** folder and again run `npm install` which will install the node_modules for the back-end part.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Running the project
 
-## Running end-to-end tests
+You should've **MongoDb** installed in your system in-order to run this project.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+If you don't have **MongoDb** installed in your system, then you can follow this [installation guide](https://medium.com/@LondonAppBrewery/how-to-download-install-mongodb-on-windows-4ee4b3493514)
 
-## Further help
+Run `ng serve` inside **MeanCrud** folder to run the front-end
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Next go inside the **Node-Api** folder and run `nodemon index.js` which will run the back-end and you should see the success message in the console.
+
+Now you can use the port provided by the `ng serve` to run the project in the browser.
+
+
